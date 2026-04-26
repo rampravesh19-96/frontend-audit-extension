@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background: #f8fafc;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+html {
+  width: 420px;
+  height: 600px;
+}
+
+body {
+  margin: 0;
+  width: 420px;
+  min-width: 420px;
+  max-width: 420px;
+  height: 600px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

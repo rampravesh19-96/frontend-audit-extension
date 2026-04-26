@@ -1,0 +1,1 @@
+{"root":["./src/background/index.ts","./src/content/index.ts","./src/popup/app.tsx","./src/popup/main.tsx","./src/popup/presentation.ts","./src/shared/auditexport.ts","./src/shared/auditissues.ts","./src/shared/auditscoring.ts","./src/shared/auditstorage.ts","./src/shared/messages.ts","./src/shared/types.ts"],"version":"5.9.3"}
