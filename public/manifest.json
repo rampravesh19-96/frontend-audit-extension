@@ -8,16 +8,8 @@
     "default_title": "Frontend Audit"
   },
   "permissions": ["activeTab", "storage", "scripting", "tabs"],
-  "host_permissions": ["http://*/*", "https://*/*"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
-  },
-  "content_scripts": [
-    {
-      "matches": ["http://*/*", "https://*/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  }
 }

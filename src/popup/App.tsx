@@ -333,12 +333,15 @@ export default function App() {
         error?: string;
       };
 
+      await injectContentScript(tab.id);
+      console.log('[Frontend Audit] content.js injected for active tab');
+
       try {
         response = await sendAuditMessage(tab.id);
         console.log('[Frontend Audit] Initial sendMessage response:', response);
       } catch (messageError) {
         console.warn(
-          '[Frontend Audit] sendMessage failed, trying injection:',
+          '[Frontend Audit] sendMessage failed after injection, retrying once:',
           messageError
         );
         await injectContentScript(tab.id);
